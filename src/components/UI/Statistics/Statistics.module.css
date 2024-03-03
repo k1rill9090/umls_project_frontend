@@ -1,0 +1,21 @@
+.main_block {
+    display: flex;
+    border: 1.5px solid black;
+
+    max-width: 700px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(27, 80, 113, 0.21);
+}
+
+/* для подзаголовка */
+.h {
+    font-family: 'golos-text';
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .back {
+    margin: 2% 1%;
+  }

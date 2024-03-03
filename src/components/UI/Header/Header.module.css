@@ -1,0 +1,47 @@
+
+/* отдельно для текста шапки */
+.h {
+  font-family: 'golos-text';
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* доготип РосНОУ сбоку */
+.rosnou_img {
+  position: absolute;
+  right: 10%;
+  top: 1%;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* размер картинки в шапке */
+.rosnou_logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* разделительная линия */
+.line {
+  width: 100%;
+  height: 10px;
+  border: none;
+  border-top: 1px solid #333;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  margin-top: 0;
+}
+
+/* настройки для мобильных устройств */
+@media (max-width: 980px) {
+  .rosnou_img {
+    right: 0;
+    top: 1rem;
+    right: 50%;
+    transform: translateX(50%);
+    
+  }  
+
+  .head {
+    margin-top: 4rem;
+  }
+}

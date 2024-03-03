@@ -1,0 +1,16 @@
+.elems {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectYearUsual {
+    border-radius: 7px;
+    text-align: center;
+}
+
+.selectYearErr {
+    border-color: rgb(202, 1, 1);
+    border-width: 2px;
+}

@@ -1,0 +1,8 @@
+ /* обводка поля для валидации + красный текст */
+ .error {
+    border: 2px solid #ff0000 !important;
+}
+.error:focus{
+    outline: none;
+    box-shadow: none;
+}

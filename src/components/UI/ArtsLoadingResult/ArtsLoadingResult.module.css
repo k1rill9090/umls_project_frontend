@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    justify-content: center;
+    border: 1.6px solid #003F63;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4%;
+    /* margin: auto; */
+    border-radius: 34px;
+    box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.649);
+    background-color: #003f6307;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'golos-text';
+    font-size: 0.9rem;
+}
+
+.mainy {
+    width: 100%;
+}
+
+@media (min-width: 1000px) {
+    .mainy {
+        margin: auto;
+        width: 1000px;
+    }
+}
+
+.btn {
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgba(0, 63, 99, 0.14);
+}

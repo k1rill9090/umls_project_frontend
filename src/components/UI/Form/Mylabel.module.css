@@ -1,0 +1,11 @@
+.errLabel {
+    color: red;
+}
+
+@media (max-width: 980px) {
+    .errLabel {
+        font-size: 0.7rem;
+    }
+}
+
+

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "plumb";
+    src: url("../static/fonts/ofont.ru_Plumb.ttf") format("truetype");
+    }
+
+@font-face {
+    font-family: "golos-text";
+    src: url("../static/fonts/golos-text_regular.woff2") format("woff2");
+  }
+
+
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.barChart {
+    display: flex;
+    justify-content: center;
+}
