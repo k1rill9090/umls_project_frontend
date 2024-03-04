@@ -18,7 +18,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/articles' element={<Articles currentUrl={window.location.href}/>}/>
         <Route path='/listTerms' element={<div className={'barChart'}><ListOfTerms /></div>}/>
-        <Route path='/form' element={<FormGeneral />}/>
+        {/* <Route path='/form' element={<FormGeneral />}/> */}
         <Route path="*" element={<Navigate to="/articles" replace />} />
       </Routes>
     </BrowserRouter>

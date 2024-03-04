@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import MyForm from '../components/UI/Form/MyForm';
 import ArtsLoadingResult from '../components/UI/ArtsLoadingResult/ArtsLoadingResult';
 
-
+// Компонент для рендеринга формы загрузки терминов, на данный момент не работает
 function FormGeneral() {
     // состояние, определяющее по числу, какой компонент рендерить в switch case
     const [page, setPage] = useState(0)

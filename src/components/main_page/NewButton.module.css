@@ -15,7 +15,7 @@ button {
     -moz-user-select: none;
     user-select: none;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     
   }
 .btn:hover {
@@ -25,6 +25,8 @@ button {
 .listTerms {
   background-color: rgba(0, 46, 101, 0.249); 
 }
+
+
 
 
 

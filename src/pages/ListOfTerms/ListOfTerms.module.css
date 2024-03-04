@@ -2,15 +2,23 @@
     padding-top: 20px;
     padding-bottom: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
+    width: 1000px;
 }
 
-.selectYearUsual {
+.selectUsual {
+
     border-radius: 7px;
     text-align: center;
 }
+.selectUsual:focus {
+    outline: 0;
 
-.selectYearErr {
+}
+
+
+.err {
     border-color: rgb(202, 1, 1);
     border-width: 2px;
 }

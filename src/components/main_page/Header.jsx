@@ -3,8 +3,8 @@ import Logo from './Logo';
 import styles from './Header.module.css';
 import NewButton from './NewButton';
 import ModalLoader from '../UI/ModalLoader/ModalLoader';
-import { backend_url } from '../..';
-import axios from 'axios';
+// import { backend_url } from '../..';
+// import axios from 'axios';
 import ErrNotification from '../UI/ErrNotification/ErrNotification';
 import Loader from '../UI/Loader/Loader';
 import AccessNotification from '../UI/AccessNotification/AccessNotification';
@@ -54,26 +54,26 @@ function Header() {
 
   // функция по вызову апи удаления постов. Для кнопки удаления.
   // При запуске открывается модалка и при завершении появляется уведомление об успехе или неудаче
-  const clearDb = async () => {
-      // предотвратить обновление страницы при нажатии на кнопку
-      // a.preventDefault()      
-      setModal(true)
-      try {
-          await axios.delete(backend_url+'/clearPubmedArticles', {headers: {'ngrok-skip-browser-warning': true}});
-          // console.log("Метод delete. Статус = "+resp.status);
-          setTimeout(() => {setModal(false)}, 2000);
-          setTimeout(() => {setNoteAccess(true)}, 2000);
-          setTimeout(() => {setNoteAccess(false)}, 5000);
+  // const clearDb = async () => {
+  //     // предотвратить обновление страницы при нажатии на кнопку
+  //     // a.preventDefault()      
+  //     setModal(true)
+  //     try {
+  //         await axios.delete(backend_url+'/clearPubmedArticles', {headers: {'ngrok-skip-browser-warning': true}});
+  //         // console.log("Метод delete. Статус = "+resp.status);
+  //         setTimeout(() => {setModal(false)}, 2000);
+  //         setTimeout(() => {setNoteAccess(true)}, 2000);
+  //         setTimeout(() => {setNoteAccess(false)}, 5000);
           
-      } catch(err) {
-          console.log(err)
-          setModal(false)
-          setNote(true)
-          setTimeout(() => {
-              setNote(false)
-          }, 5000);
-      }    
-  }
+  //     } catch(err) {
+  //         console.log(err)
+  //         setModal(false)
+  //         setNote(true)
+  //         setTimeout(() => {
+  //             setNote(false)
+  //         }, 5000);
+  //     }    
+  // }
 
 
   return (
@@ -95,13 +95,13 @@ function Header() {
             <NewButton id='listTerms' to='/listTerms' onClick={handleClick}>список терминов</NewButton>
             </div>
 
-            <div className={active.form ? styles.totalBtn+' '+ styles.active : styles.totalBtn}>
+            {/* <div className={active.form ? styles.totalBtn+' '+ styles.active : styles.totalBtn}>
             <NewButton id='form' to='/form' onClick={handleClick}>
               Загрузить статьи
             </NewButton>
-            </div>
+            </div> */}
 
-            <button className={styles.clearBtn} onClick={clearDb}>Очистить данные</button>
+            {/* <button className={styles.clearBtn} onClick={clearDb}>Очистить данные</button> */}
         </div>
 
         <div style={{marginRight: '15%'}} className={active.about ? styles.totalBtn+' '+ styles.active : styles.totalBtn}>
